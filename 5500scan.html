@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>EOAホワイトリストデモ(GEN)</title>
+	<link rel="icon" href="favicon.ico">
+    <!-- icon -->
+    <title>ShinCoin_Scanner-v1</title>
+    <meta charset="utf-8" />
+    <!-- web3 js (LGPL-3.0)-->
+    <script type="text/javascript" src="./web3.min.js"></script>
+
+    <!-- https://www.npmjs.com/package/@metamask/detect-provider-->
+    <script src="https://unpkg.com/@metamask/detect-provider/dist/detect-provider.min.js"></script>
+    <!--alchemyweb3 Minified -->
+    <script src="https://cdn.jsdelivr.net/npm/@alch/alchemy-web3@latest/dist/alchemyWeb3.min.js"></script>
+    
+    <!--ethers.js-->  
+<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+    
+    <!--abi.js-->
+    <script type="text/javascript" src="./abiga.js"></script>
+
+    <!--jsQR.js-->
+    <script type="text/javascript" src="./jsQR.js"></script>
+
+    <!--index.js-->
+    <script type="text/javascript" src="./5500scan.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css"/>
+
+</head>
+<body>
+    <!--vp-auth-qr-->
+    <label for="name">Web3QR-SCAN-demo</label><br/>
+    <label for="name2">ShinCoin_Scanner-v1</label><br/>
+    <p style="text-align:left">
+        <img src="./img/ShinCoin1gram.jpg"width="70">
+    </p>
+
+    <h1>スキャン中・・・(jsQR)</h1>
+    <div id="wrapper">
+        <div id="msg">Unable to access video stream.</div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <p id="authRes">認証結果 </p><!--vp-auth display--><br/>
+</body>
+</html>
